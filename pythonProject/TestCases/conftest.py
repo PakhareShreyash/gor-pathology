@@ -24,9 +24,9 @@ def pytest_addoption(parser):
     parser.addoption("--browser")
 
 
-# def pytest_configure(config):
-#     config._metadata ['Project_Name'] = 'GOR PATHOLOGY'
-#     config._metadata['Test Engineer'] = 'PANKAJ'
-#
-# def pytest_metadata(metadata):
-#     metadata.pop('Plugins', None)
+def pytest_configure(config):
+    config._metadata ['Project_Name'] = 'GOR PATHOLOGY'
+    config._metadata['Test Engineer'] = 'Shreyash'
+
+def pytest_metadata(metadata):
+    metadata.pop('Plugins', None)
